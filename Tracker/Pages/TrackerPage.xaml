@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Tracker" x:Class="Tracker.TrackerPage">
+
+	<ContentPage.ToolbarItems>
+        <ToolbarItem Name="Add" Clicked="Handle_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+	<ListView ItemsSource="{Binding}" x:Name="TracksList" HasUnevenRows="true" ItemSelected="Handle_ItemSelected">
+		<ListView.ItemTemplate>
+			<DataTemplate>
+				<ViewCell>
+					<StackLayout Spacing="10" Margin="10">
+						<Label Text = "{Binding code}" HorizontalOptions="StartAndExpand"  />
+						<Label Text = "{Binding description}" HorizontalOptions="StartAndExpand"/>
+						
+					</StackLayout>
+				</ViewCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
+</ContentPage>

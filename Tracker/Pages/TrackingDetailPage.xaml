@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Tracker.TrackingDetailPage" Title="Detalhes">
+	<ContentPage.Content>
+
+		<StackLayout>
+			<Label Text="{Binding tracking.code}"></Label>
+			<Label Text="{Binding tracking.description}"></Label>
+		</StackLayout>
+
+		<!--<ListView ItemsSource="{Binding}" x:Name="EventList" HasUnevenRows="true">
+		<ListView.ItemTemplate>
+			<DataTemplate>
+				<ViewCell>
+					<StackLayout Spacing="10" Margin="10">
+						<Label Text = "{Binding date}" HorizontalOptions="StartAndExpand"  />
+						<Label Text = "{Binding description}" HorizontalOptions="StartAndExpand"  />
+						<Label Text = "{Binding place}" HorizontalOptions="StartAndExpand"  />
+						<Label Text = "{Binding status}" HorizontalOptions="StartAndExpand"/>
+						
+					</StackLayout>
+				</ViewCell>
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>-->
+		
+	</ContentPage.Content>
+</ContentPage>
